@@ -44,7 +44,7 @@ INSERT INTO professori(nome,cognome,cf,settore)
 	("Eric", "Medvet", "MDVRCE79C02L424U",
 	"ING -INF/05");
 INSERT INTO corsi
-	VALUES ("079IN", "Basi di Dati", 9, 0001);
+	VALUES ("079IN", "Basi di Dati", 9, 1);
 INSERT INTO corsi (codice , nome , cfu)
 	VALUES ("587SM", "Advanced Programming", 12);
 INSERT INTO esami
@@ -55,6 +55,7 @@ INSERT INTO esami (corso , studente , data , voto)
 	30);
 
 -- Da qui in poi popolamento massiccio
+INSERT INTO studenti VALUES ("SM3211162", "Leonardo", "Bianchi", "BNCLRD99A12L424Y");
 INSERT INTO studenti VALUES ("IN2000037","Alessandro","Corrias","CRRLSS91R25L424Q");
 INSERT INTO studenti VALUES ("EC2100766","Arturo","Mugione","MGNRTR93C28L424U");
 INSERT INTO studenti VALUES ("SM3400424","Arturo","Baragliu","BRGRTR97M21L424D");
@@ -2635,3 +2636,4 @@ INSERT INTO esami VALUES ("210DT","EC7200264","2015-11-12",27,FALSE);
 INSERT INTO esami VALUES ("694RA","EC7200264","2020-02-15",23,FALSE);
 INSERT INTO esami VALUES ("999FX","IN0500997","2013-05-20",27,FALSE);
 INSERT INTO esami VALUES ("051MN","IN0500997","2013-06-16",22,FALSE);
+INSERT INTO esami VALUES ("721LE","IN0500550","2021-06-17",30,TRUE);
