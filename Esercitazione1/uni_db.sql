@@ -26,6 +26,7 @@ CREATE TABLE corsi(
 CREATE TABLE esami(
     corso CHAR(5), studente CHAR(9), data DATE,
     voto TINYINT NOT NULL, lode BOOL DEFAULT FALSE,
+    PRIMARY KEY (corso, studente),
     FOREIGN KEY (corso) REFERENCES corsi(codice),
     FOREIGN KEY (studente) 
         REFERENCES studenti(matricola)
